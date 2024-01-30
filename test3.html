@@ -1,6 +1,17 @@
-<html>
-  <head> </head>
+<!-- fix: <html> element does not have a [lang] attribute -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tests</title>
+    <meta name="description" content="Your page description." />
+
+    <meta name="robots" content="index, follow" />
+  </head>
   <body>
-    Hello World!
+    <!-- fix: Improve accessibility by adding a landmark role -->
+    <main role="main">Hello World!</main>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
   </body>
 </html>
